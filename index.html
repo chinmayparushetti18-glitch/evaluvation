@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Event Registration System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="container">
+
+        <h2>Student Registration</h2>
+
+        <form id="student">
+
+            <label>Student Name:</label>
+            <input type="text" id="name" required>
+
+            <label>USN:</label>
+            <input type="text" id="USN" required>
+
+            <label>Email:</label>
+            <input type="email" id="loginEmail" required>
+
+            <button type="button" onclick="student()">Register</button>
+
+        </form>
+
+    </section>
+
+
+    <section class="container">
+
+        <h2>Events Dashboard</h2>
+
+        <div class="events">
+
+            <div class="event">
+                <p><b>Event:</b> Sambrama</p>
+                <p><b>Description:</b> Join us</p>
+                <p><b>Date:</b> 10-Oct</p>
+                <p><b>Venue:</b> Auditorium</p>
+                <p><b>Available:</b> Yes</p>
+            </div>
+
+            <div class="event">
+                <p><b>Event:</b> Kalarava</p>
+                <p><b>Description:</b> Join us</p>
+                <p><b>Date:</b> 11-Oct</p>
+                <p><b>Venue:</b> Auditorium</p>
+                <p><b>Available:</b> Yes</p>
+            </div>
+
+            <div class="event">
+                <p><b>Event:</b> Play Games</p>
+                <p><b>Description:</b> Join us</p>
+                <p><b>Date:</b> 12-Oct</p>
+                <p><b>Venue:</b> Auditorium</p>
+                <p><b>Available:</b> No</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="container">
+
+        <h2>Event Registration</h2>
+
+        <form id="eventregistrationForm">
+
+            <label>Student Name:</label>
+            <input type="text" id="name" required>
+
+            <label>USN / Roll Number:</label>
+            <input type="text" id="usn" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Department:</label>
+            <input type="text" id="department" required>
+
+            <label>Event Selection:</label>
+            <select id="event" required>
+                <option value="">Select Event</option>
+                <option value="sambrama">Sambrama</option>
+                <option value="kalarava">Kalarava</option>
+                <option value="playgames">Play Games</option>
+            </select>
+
+            <label>Event Date:</label>
+            <input type="date" id="date" required>
+
+            <button type="submit" onclick="eventregistrationForm()">Event Registration</button>
+
+        </form>
+
+        <div id="result"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
